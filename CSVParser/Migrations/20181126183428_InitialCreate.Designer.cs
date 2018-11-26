@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CSVParser.Migrations
 {
     [DbContext(typeof(CSVDataContext))]
-    [Migration("20181126174105_InitialCreate")]
+    [Migration("20181126183428_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

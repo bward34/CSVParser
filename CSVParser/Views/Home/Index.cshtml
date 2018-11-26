@@ -1,14 +1,19 @@
 ﻿@model System.Data.DataTable
 @using System.Data;
 
+@{
+    ViewData["Message"] = "Upload your CSV file here.";
+}
 
 @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary()
 
-    <h1>Upload your CSV file here.</h1>
 
+    <h2>@ViewData["Message"]</h2>
+    <div>When you are finished uploading you can click the Orders and Tickets Tabs to see the uploaded data as well
+    as create, edit, or delete any record.</div> <br>
     <div class="form-group">
         <input type="file" id="dataFile" name="upload" />
     </div>

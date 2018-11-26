@@ -4,7 +4,7 @@
     Last update: 11/26/2018
 
     This class is the model for the orders
-    table int the database. This model contains
+    table in the database. This model contains
     the FirstName and LastName given by the uploaded
     data.
 */
